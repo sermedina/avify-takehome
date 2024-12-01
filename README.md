@@ -1,77 +1,76 @@
-# Avify Take Home React
+# 🌐 Energy Dashboard
 
-## TLDR
+A simple project built with **React** to visualize charts related to the UK's energy mix. It displays data such as energy types and their contribution percentages. The design includes a default dark mode with a toggle for light mode.
 
--  This README describes the test - read it
--  **Everything** you need to know is in this readme
--  Definitely read the 'What are you looking for in the solution?' bit
+You can test it here! https://energy-dashboard-sermedina.netlify.app/
 
-## What is this?
+---
 
-We ask our JavaScript candidates to take this test as part of our recruitment technical process. This is step one. If we like your submission we will invite you in for (probably one) technical interview where we will have a chat and ask you to do some pair programming.
+## 📊 Features
 
-### What should it do?
+- Interactive charts to visualize the energy mix.
+- Charts generated using **ApexCharts**.
+- Dynamic data fetched from https://api.carbonintensity.org.uk/generation.
+- Toggle between **dark mode** and **light mode**.
+- Themes synchronized with `localStorage` to persist the interface state.
 
-Your task is to write a React application that displays the current mix of energy generation in the UK (i.e. how much nuclear, wind, solar etc.).
+---
 
-We have provided an empty React app to get you started - it is pre-configured with Babel and Webpack to get you up and running with no fuss. Details of an API that you can call to load the data that you should display are provided below.
+## 🚀 Technologies Used
 
-### How should it work?
+- [**React**](https://reactjs.org/): Main framework for building the UI.
+- [**TypeScript**](https://www.typescriptlang.org/): Used to ensure static typing and greater robustness in the code.
+- [**Tailwind CSS**](https://tailwindcss.com/): Framework for fast and customizable styling.
+- [**ApexCharts**](https://apexcharts.com/): Library for interactive charts.
+- [**React Testing Library**]:(https://testing-library.com/docs/react-testing-library/intro/): Unit and functional testing.
+- [**Jest**](https://jestjs.io/): Framework used for unit and integral tests.
 
-Definitely using React!
 
-How you decide to load and show the data is entirely up to you.
-You are free to use any libraries that you want (via `npm`) and you can choose how you wish to display the data. Some suggestions are:
+---
 
--  Huge numbers
--  Tiled icons and numbers
--  A chart of some kind
--  Relative sized colour bands in a giant unicorn's rainbow puke
+## 🛠 Installation and Usage
 
-## Getting started
+Follow the steps below to clone and run the project locally.
 
--  If you haven't already, fork our GitHub project
--  Get the dependencies - `npm install`
--  Run the app - `npm start` - it will be available at http://localhost:8080
--  Write your code, starting with [`app.tsx`](./src/app.tsx)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/avify-takehome.git
+cd avify-takehome
 
-### Where can I find the UK energy generation data?
+```
+2. Install Dependencies
+Ensure you have Node.js installed, then run:
 
-Here: https://api.carbonintensity.org.uk/generation
+```bash
+npm install
+```
+3. Run in Development Mode
+```bash
+npm start
+```
 
-An example response is in `example_api_response.json`, where you can see that the data includes the relative percentage values of a variety of fuels
-for 1 settlement period (half hour block). A live call to the API will give you the data for the latest complete settlement period. This is absolutely fine for the purposes of this test - _you do not need to worry about any larger time periods_.
+The project will be available at http://localhost:3000.
 
-An existing website that shows this data is here: https://gridwatch.co.uk/
+🧪 Run Tests
+This project includes unit tests to ensure the functionality of the charts and theme toggle. To execute them:
 
-### What are you looking for in the solution?
+```bash
+npm test
+```
+🌟 Main Features
 
--  A **simple**, **readable**, **well-factored** solution - not the fanciest charting library or middleware components you can find
--  Some form of visual styling - we don't care what technology you use for this but an un-styled `ul` is not going to cut it
--  Automated tests
+Charts
+Chart Types: Includes area, bar, line and donut charts for better data representation.
+Dynamic Data: Data is fetched from API https://api.carbonintensity.org.uk/generation and rendered in real-time.
+Theme Toggle
+Default Dark Mode.
+A toggle button to switch between light and dark modes.
+Theme persistence using localStorage.
+Simulated Data
+The energy mix includes:
 
-### Anything else I should know?
+Types of energy such as solar, wind, and gas.
+Contribution percentage for each type.
 
--  You can use any JavaScript features
--  You can use TypeScript if you prefer (the project is already configured for this)
--  You can use any libraries that you want
--  `npm start` will start a Webpack hot-reload dev server so you can make live changes
--  Testing is appreciated
--  Rquired to deploy the application on a public url
--  We like TypeScript too
--  We like simplicity - a more complicated solution is rarely better than a simple one
--  Some types of chart seem like a really obvious fit but are not actually very good at showing small values in a data set.
--  Extra points for showing the data in a way that is easy to understand at a glance
 
-## Finishing
 
--  If you have made any changes that require us to do more than just an `npm install` and `npm start` to run your solution then please make this clear in the readme
--  Let your test reviewer know when you have finished.
--  Remember you have 6h to complete the test starting when you recieved the email.
--  Once you finish the test, please send an email to the person who sent you the test with the following information:
-   -  Zip file (without the node_modules) of the project.
-   -  Subject "Avify Take Home React - [Your Name]"
-   -  Link to the deployed app (if apply).
-   -  Link to the repository of the project.
-   -  Any additional information you want to share with us.
--  Github link to the project is required with the response email.
