@@ -22,7 +22,7 @@ You can test it here! https://energy-dashboard-sermedina.netlify.app/
 - [**TypeScript**](https://www.typescriptlang.org/): Used to ensure static typing and greater robustness in the code.
 - [**Tailwind CSS**](https://tailwindcss.com/): Framework for fast and customizable styling.
 - [**ApexCharts**](https://apexcharts.com/): Library for interactive charts.
-- [**React Testing Library**]:(https://testing-library.com/docs/react-testing-library/intro/): Unit and functional testing.
+- [**React Testing Library**](https://testing-library.com/docs/react-testing-library/intro/): Unit and functional testing.
 - [**Jest**](https://jestjs.io/): Framework used for unit and integral tests.
 
 
@@ -59,17 +59,23 @@ npm test
 ```
 🌟 Main Features
 
-Charts
+
 Chart Types: Includes area, bar, line and donut charts for better data representation.
+
 Dynamic Data: Data is fetched from API https://api.carbonintensity.org.uk/generation and rendered in real-time.
+
 Theme Toggle
+
 Default Dark Mode.
+
 A toggle button to switch between light and dark modes.
+
 Theme persistence using localStorage.
-Simulated Data
-The energy mix includes:
+
+The energy charts includes:
 
 Types of energy such as solar, wind, and gas.
+
 Contribution percentage for each type.
 
 
